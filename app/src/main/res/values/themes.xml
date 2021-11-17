@@ -12,5 +12,14 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="android:listDivider">@color/magenta</item>
+    </style>
+
+    <style name="Theme.NavigationView" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:listDivider">@color/magenta</item>
+        <item name="colorOnPrimary">@color/dark_grey</item>
+        <item name="background">@color/dark_grey</item>
+        <item name="backgroundColor">@color/dark_grey</item>
+        <item name="backgroundTint">@color/dark_grey</item>
     </style>
 </resources>

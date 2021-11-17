@@ -82,7 +82,7 @@
             <com.google.android.material.navigation.NavigationView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_gravity="right"
+                android:layout_gravity="end"
                 android:id="@+id/calc_view"
                 android:overScrollMode="never"
                 app:headerLayout="@layout/calc_header">
@@ -407,7 +407,8 @@
                         android:adjustViewBounds="true"
                         android:backgroundTint="@color/magenta"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/left_arrowhead" />
+                        android:src="@drawable/left_arrowhead"
+                        android:clickable="true"/>
 
                 </LinearLayout>
 
@@ -423,6 +424,9 @@
         android:layout_gravity="start"
         android:id="@+id/ham_view"
         app:headerLayout="@layout/ham_menu_header"
+        android:theme="@style/Theme.NavigationView"
+        android:background="@color/grey"
+        app:itemTextColor="@color/white"
         app:menu="@menu/main_menu" />
 
 </androidx.drawerlayout.widget.DrawerLayout>

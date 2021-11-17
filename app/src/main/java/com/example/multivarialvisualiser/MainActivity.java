@@ -52,6 +52,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     EditText workingsTV;
     TextView resultsTV;
 
+    ImageView calcDrawView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,7 +69,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         calcDrawerLayout = findViewById(R.id.calc_drawer_layout);
         hamNavView = findViewById(R.id.ham_view);
         calcNavView = findViewById(R.id.calc_view);
-        //scientificCalcView();
 
         //toolbar declaration
         hamNavView.bringToFront();
@@ -81,15 +82,17 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         hamDrawerLayout.addDrawerListener(hamToggle);
         hamToggle.syncState();
 
-        //ActionBarDrawerToggle calcToggle = new ActionBarDrawerToggle(this, calcDrawerLayout, toolbar, R.string.calc_drawer_open, R.string.calc_drawer_close);
-        //hamDrawerLayout.addDrawerListener(hamToggle);
-        //calcToggle.syncState();
+        calcDrawView = (ImageView) findViewById(R.id.scientific_calc_button);
+        calcDrawView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                calcDrawerLayout.openDrawer(GravityCompat.END);
+            }
+        });
 
         //func calls to make the items in the navigation menu clickable
         hamNavView.setNavigationItemSelectedListener(this);
         hamNavView.setCheckedItem(R.id.home);
-
-        //View header = calcNavView.getHeaderView(0);
 
         //Function to disable the scrollbar in the calc navigation view
         disableNavigationViewScrollbars(calcNavView);
@@ -102,16 +105,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         workingsTV = (EditText) findViewById(R.id.workingsTV);
         resultsTV = (TextView) findViewById(R.id.resultsTV);
     }
-
-    /*private void scientificCalcView(){
-        calcView = (ImageView) findViewById(R.id.scientific_calc_button);
-        calcView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                calcDrawerLayout.openDrawer(GravityCompat.END);
-            }
-        });
-    }*/
 
     //function to disable the scroll mode in the calc navigation view
     private void disableNavigationViewScrollbars(NavigationView navigationView){
