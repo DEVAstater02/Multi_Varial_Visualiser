@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="450dp"
+    android:background="@color/magenta"
+    android:orientation="horizontal"
+    android:clickable="true">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.33"
+        android:background="@color/magenta"
+        android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonSin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:backgroundTint="@color/magenta"
+            android:fontFamily="@font/ubuntu_medium_italic"
+            android:text="@string/trigSinText"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/scientificButtonTextSize"
+                android:onClick="trigSinButton"/>
+
+            <Button
+                android:id="@+id/buttonSinInv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:backgroundTint="@color/magenta"
+            android:fontFamily="@font/ubuntu_medium_italic"
+            android:text="@string/trigArcSinText"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+                android:textSize="@dimen/scientificButtonTextSize"
+                android:onClick="trigArcSinButton"/>
+
+            <Button
+                android:id="@+id/buttonLog"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:backgroundTint="@color/magenta"
+            android:fontFamily="@font/ubuntu_medium_italic"
+            android:text="@string/LogText"
+                android:textAllCaps="false"
+            android:textColor="@color/white"
+                android:textSize="@dimen/scientificButtonTextSize"
+                android:onClick="logButton"/>
+
+            <Button
+                android:id="@+id/buttonOpeningBrac"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:backgroundTint="@color/magenta"
+            android:fontFamily="@font/ubuntu_medium_italic"
+            android:text="("
+            android:textColor="@color/white"
+            android:textSize="30sp"
+                android:onClick="openingBracButton"/>
+
+            <Button
+                android:id="@+id/buttonE"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:backgroundTint="@color/magenta"
+            android:fontFamily="@font/ubuntu_medium_italic"
+            android:text="e"
+                android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+                android:onClick="eButton"/>
+
+            <Button
+                android:id="@+id/buttonPercentage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:backgroundTint="@color/magenta"
+            android:fontFamily="@font/ubuntu_medium_italic"
+            android:text="%"
+            android:textColor="@color/white"
+                android:textSize="@dimen/scientificButtonTextSize"
+                android:onClick="percentageButton"/>
+
+        
+    </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.33"
+        android:background="@color/magenta"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/buttonCos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:backgroundTint="@color/magenta"
+            android:fontFamily="@font/ubuntu_medium_italic"
+            android:text="@string/trigCosText"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/scientificButtonTextSize"
+            android:onClick="trigCosButton"/>
+
+        <Button
+            android:id="@+id/buttonCosInv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:backgroundTint="@color/magenta"
+            android:fontFamily="@font/ubuntu_medium_italic"
+            android:text="@string/trigArcCosText"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/scientificButtonTextSize"
+            android:onClick="trigArcCosButton"/>
+
+        <Button
+            android:id="@+id/buttonLon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:backgroundTint="@color/magenta"
+            android:fontFamily="@font/ubuntu_medium_italic"
+            android:text="@string/naturalLogText"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/scientificButtonTextSize"
+            android:onClick="lonButton"/>
+
+        <Button
+            android:id="@+id/buttonClosingBrac"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:backgroundTint="@color/magenta"
+            android:fontFamily="@font/ubuntu_medium_italic"
+            android:text=")"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:onClick="closingBracButton"/>
+
+        <Button
+            android:id="@+id/buttonXpower2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:backgroundTint="@color/magenta"
+            android:fontFamily="@font/ubuntu_medium"
+            android:text="@string/xSquaredText"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/scientificButtonTextSize"
+            android:onClick="xSquareButton"/>
+
+        <Button
+            android:id="@+id/buttonPrime"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:backgroundTint="@color/magenta"
+            android:fontFamily="@font/ubuntu_medium_italic"
+            android:text="@string/isPrimeFunctionText"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:onClick="primeButton"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.32"
+        android:background="@color/magenta"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/buttonTan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:backgroundTint="@color/magenta"
+            android:fontFamily="@font/ubuntu_medium_italic"
+            android:text="@string/trigTanText"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/scientificButtonTextSize"
+            android:onClick="trigTanButton"/>
+
+        <Button
+            android:id="@+id/buttonTanInv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:backgroundTint="@color/magenta"
+            android:fontFamily="@font/ubuntu_medium_italic"
+            android:text="@string/trigArcTanText"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/scientificButtonTextSize"
+            android:onClick="trigArcTanButton"/>
+
+        <Button
+            android:id="@+id/buttonSqrt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:backgroundTint="@color/magenta"
+            android:fontFamily="@font/ubuntu_medium_italic"
+            android:text="@string/squareRootText"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/scientificButtonTextSize"
+            android:onClick="sqrtButton"/>
+
+        <Button
+            android:id="@+id/buttonPi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:backgroundTint="@color/magenta"
+            android:fontFamily="@font/ubuntu_medium"
+            android:text="@string/piText"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:onClick="piButton"/>
+
+        <Button
+            android:id="@+id/buttonXpowerY"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:backgroundTint="@color/magenta"
+            android:fontFamily="@font/ubuntu_medium"
+            android:text="@string/xPowerYText"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="@dimen/scientificButtonTextSize"
+            android:onClick="xPoweryButton"/>
+
+        <Button
+            android:id="@+id/buttonModulus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:backgroundTint="@color/magenta"
+            android:fontFamily="@font/ubuntu_medium"
+            android:text="@string/absoluteValueText"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/scientificButtonTextSize"
+            android:onClick="modulusButton"/>
+
+    </LinearLayout>
+
+</LinearLayout>
